@@ -13,20 +13,20 @@ function Login(){
         setIsPasswordVisible(!isPasswordVisible);
     }
     return(
-      <div className="container">
+      <div className="sign-in-container">
         {/* login form */}
             <form action="#">
             <h1>Login</h1>
-                <div className='social-icons'>
+                <div className='sign-in-social-icons'>
                     <div className='social-icon'><FaFacebook/></div>
                     <div className='social-icon'><FaGoogle/></div>
                     <div className='social-icon'><FaLinkedin/></div>
                 </div> 
-            <div className="input-box">
+            <div className="input-box-sign-in">
                 <FaUser className='icon'/>
                 <input type="text" placeholder="Email" required/>
             </div>
-            <div className='input-box'>
+            <div className='input-box-sign-in'>
                 <FaLock className='icon'/>
                 {/* Toggle between FaEye and FaEyeSlash */}
                 <span className='icon-button' onClick={PasswordToggle}>{isPasswordVisible ? < FaEyeSlash/>:<FaEye/>}</span>

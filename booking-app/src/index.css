@@ -20,7 +20,7 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
-.container{
+.sign-in-container{
   width: 420px;
   background-color:beige;
   padding:30px 40px;
@@ -30,36 +30,50 @@ code {
   border:2px solid rgb(255, 255, 255, .2);
   box-shadow: 0 0 10px rgb rgb(255, 255, 255, .2);
 }
+.sign-up-container{
+  Width: 600px;
+}
 
-.container h1{
+.sign-in-container h1{
   text-align: center;
 }
-.container .input-box{
+.sign-in-container .input-box-sign-in{
   position: relative;
   width:100%;
   margin: 30px 0;
 }
-.input-box input{
+.input-box-sign-up{
+  position: relative;
+  width: 100%;
+  margin:30px 0;
+}
+
+.input-box-sign-in input{
   width: 100%;
   height: 100%;
   background: transparent;
   border: none;
   outline:none;
-  /* border:2px solid rgb(255, 255, 255, .2); */
   border: 2px solid;
   border-radius: 20px;
-  /* font-size: 16px; */
-  /* color: */
   padding:20px 45px 20px 20px;
   text-align: center;
   font-size: large;
 }
-.input-box input::placeholder{
-  /* color: white; */
+.input-box-sign-up input{
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  padding:10px 30px 10px 10px;
+  font-size: large;
+}
+
+
+.input-box-sign-in input::placeholder{
   text-align: center;
 
 }
-.input-box .icon{
+.input-box-sign-in .icon{
   position: absolute;
   left: 15px;
   top:50%;
@@ -67,14 +81,14 @@ code {
   font-size: 16px;
 }
 
-.input-box .icon-button{
+.input-box-sign-in .icon-button{
   position: absolute;
   right: 20px;
   top:50%;
   transform: translateY(-50%);
   font-size: 16px;
 }
-.container .remember-forget{
+.sign-in-container .remember-forget{
   display: flex;
   justify-content: space-between;
   font-size: 16px;
@@ -91,7 +105,7 @@ code {
 .remember-forget a:hover{
   text-decoration: underline;
 }
-.container input[type="submit"]{
+.sign-in-container input[type="submit"]{
   width: 100%;
   height: 45px;
   background: #fff;
@@ -102,14 +116,13 @@ code {
   color:#333;
   font-weight: 700;
 }
-.container .signup-link{
+.sign-in-container .signup-link{
   font-size: 16px;
   text-align: center;
   margin: 20px 0 15px;
 
 }
 .signup-link p a{
-  /* color: #fff */
   text-decoration: none;
   font-weight: 600;
 }
@@ -117,10 +130,24 @@ code {
   text-decoration: underline;
 }
 
-.social-icons{
+.sign-in-social-icons{
   display: flex;
   padding-top: 10px;
   justify-content: center;
   font-size: x-large;
   justify-content: space-evenly
+}
+.sign-up-container .sign-up-social-icons{
+  display: flex;
+  padding-top: 10px;
+  justify-content: center;
+  font-size: x-large;
+}
+.sign-up-container .social-icon{
+  padding:30px;
+}
+.input-box-sign-up input[type='button'], input[type='submit']{
+  width: 40%;
+  margin: 10px;
+  text-align: center;
 }
